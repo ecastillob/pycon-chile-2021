@@ -1,0 +1,57 @@
+[MASTER]
+
+# Add files or directories to the blacklist. They should be base names, not paths.
+ignore=migrations
+
+# List of plugins (as comma separated values of python modules names) to load,
+# usually to register additional checkers.
+load-plugins=pylint_django
+
+# In order to access some of the internal Django features to improve pylint inspections
+# you should also provide a Django settings module appropriate to your project
+django-settings-module=settings
+
+
+
+[MESSAGES CONTROL]
+
+# Enable the message, report, category or checker with the given id(s). You can
+# either give multiple identifier separated by comma (,) or put this option
+# multiple time.
+#enable=
+
+# Disable the message, report, category or checker with the given id(s). You
+# can either give multiple identifier separated by comma (,) or put this option
+# multiple time (only on the command line, not in the configuration file where
+# it should appear only once).
+# E1101: Class 'ClassName' has no 'attribute' member (no-member)
+# C0114 : Missing module docstring (missing-module-docstring)
+# C0115 : Missing class docstring (missing-class-docstring)
+# C0116 : Missing function or method docstring (missing-function-docstring)
+# C0301: Line too long (>100, default) (line-too-long)
+# W0123 : Use of eval (eval-used)
+# W0223: Method 'method_name' is abstract in class 'ClassName' but is not overridden (abstract-method)
+# W0603 : Using the global statement (global-statement)
+# W0613 : Unused argument 'argument_name' (unused-argument)
+# R0201: Method could be a function (no-self-use)
+# R0903: Too few public methods (<2) (too-few-public-methods)
+# R0801: Similar lines in N files (duplicate-code)
+# R0913 : Too many arguments (>5) (too-many-arguments)
+disable=C0114,C0115,C0116,W0123,W0223,W0603,W0613,R0201,R0801,R0913
+
+
+
+[FORMAT]
+
+# Maximum number of characters on a single line.
+max-line-length=120
+
+
+
+[DESIGN]
+
+# Maximum number of arguments for function / method.
+max-args=5
+
+# Minimum number of public methods for a class (see R0903).
+min-public-methods=1

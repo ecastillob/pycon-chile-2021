@@ -1,0 +1,6 @@
+[bandit]
+# runs bandit with: bandit --ini .bandit
+targets: ./apps
+recursive: true
+format: html
+output: bandit.html

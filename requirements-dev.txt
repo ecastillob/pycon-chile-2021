@@ -1,0 +1,12 @@
+bandit==1.7.0
+black==21.5b2
+coverage==5.5
+flake8==3.9.2
+ipdb==0.13.9
+ipython==7.24.1
+isort==5.8.0
+mccabe==0.6.1
+pre-commit==2.13.0
+pylint==2.8.3
+pylint-django==2.4.4
+safety==1.10.3

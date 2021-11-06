@@ -1,0 +1,13 @@
+[project]
+name = "Match API Expert System"
+version = "0.1.0"
+description = "API contains a Expert System that make inferences to recommend cars"
+authors = [
+    "Erick Castillo <erick.castillo@autofact.cl>"
+]
+readme = "README.md"
+python = "^3.6"
+
+
+[tool.black]
+line-length = 120
